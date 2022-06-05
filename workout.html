@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +10,9 @@
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/footer.css">
 </head>
+
 <body>
-    
+
     <header>
         <div class="navigation">
             <img src="img/logo.png" style="border-radius: 100%;" alt="logo">
@@ -61,81 +63,103 @@
 
 
     <div class="status">
-        <div >
+        <div>
             <br>
             <h1>BURN BELLY FAT</h1><br>
             <h3>Day 1</h3><br>
             <h2>12 Excercises || 15 Minute || ~ 142 Calorie</h2><br>
         </div>
-        <div class="option">
-            <ion-icon name="arrow-down-circle-outline"></ion-icon>
-        </div>
-    </div>
-    <div class="startTimer">
-        <button>START</button>
-        <h3 id="timer" value="00:00">Duration - 00:00</h3>
+        <!-- <div class="option">
+            <button id="select1">
+                <ion-icon id="downar" onclick="down()" name="arrow-down-circle-outline"></ion-icon>
+                <ion-icon id="upar" onclick="up()" name="arrow-up-circle-outline"></ion-icon>
+            </button>
+        </div> -->
     </div>
 
-    <div class="excercises">
-        <div class="exercise jumpingJacks">
-            <img src="img/jumpingJacks.gif" width="350px" alt="">
-            <h2>1/12 || JUMPING JACKS</h2>
-            <h3>20 s</h3>
+    <div class="exmenu" id="dropdown1">
+        <div class="startTimer">
+            <button id="button-start">Start</button>
+            <button id="button-stop">Stop</button>
+            <button id="button-reset">Reset</button>
+            <h3 id="timer">DURATION<p>&nbsp;&nbsp;<span id="seconds">00</span>:<span id="tens">00</span></p>
+            </h3>
+            <script src="JS/workoutscript.js"></script>
         </div>
-        <div class="exercise mountainClimber">
-            <img src="img/mountainClimber.gif" alt="">
-            <h2>2/12 || MOUNTAIN CLIMBER</h2>
-            <h3>25 s</h3>
-        </div>
-        <div class="exercise bicycleCrunches">
-            <img src="img/bicycleCrunches.gif" alt="">
-            <h2>3/12 || BICYCLE CRUNCHES</h2>
-            <h3>25 s</h3>
-        </div>
-        <div class="exercise longArmCrunches">
-            <img src="img/longArmCrunches.gif" alt="">
-            <h2>4/12 || LONG ARM CRUNCHES</h2>
-            <h3>10</h3>
-        </div>
-        <div class="exercise crunches">
-            <img src="img/crunches.gif" alt="">
-            <h2>5/12 || CRUNCHES</h2>
-            <h3>10</h3>
-        </div>
-        <div class="exercise russianTwist">
-            <img src="img/russianTwist.gif" alt="">
-            <h2>6/12 || RUSSIAN TWISTS</h2>
-            <h3>16 (8 each side)</h3>
-        </div>
-        <div class="exercise bicycleCrunches">
-            <img src="img/bicycleCrunches.gif" alt="">
-            <h2>7/12 || BICYCLE CRUNCHES</h2>
-            <h3>25 s</h3>
-        </div>
-        <div class="exercise longArmCrunches">
-            <img src="img/longArmCrunches.gif" alt="">
-            <h2>8/12 || LONG ARM CRUNCHES</h2>
-            <h3>10</h3>
-        </div>
-        <div class="exercise crunches">
-            <img src="img/crunches.gif" alt="">
-            <h2>9/12 || CRUNCHES</h2>
-            <h3>10</h3>
-        </div>
-        <div class="exercise russianTwist">
-            <img src="img/russianTwist.gif" alt="">
-            <h2>10/12 || RUSSIAN TWISTS</h2>
-            <h3>16 (8 each side)</h3>
-        </div>
-        <div class="exercise cobraStretch">
-            <img src="img/cobraStretch.gif" alt="">
-            <h2>11/12 || COBRA STRETCH</h2>
-            <h3>30 s</h3>
-        </div>
-        <div class="exercise lyingTwist">
-            <img src="img/lyingTwist.gif" alt="">
-            <h2>12/12 || LYING TWIST</h2>
-            <h3>30 s (Both Sides)</h3>
+
+        <div class="excercises">
+            <div class="exercise jumpingJacks">
+                <img src="img/jumpingJacks.gif" width="350px" alt="">
+                <h2>1/12 || JUMPING JACKS</h2>
+                <h3>20 s</h3>
+                <button onclick="" id="donebtn">DONE</button>
+            </div>
+            <div class="exercise mountainClimber">
+                <img src="img/mountainClimber.gif" alt="">
+                <h2>2/12 || MOUNTAIN CLIMBER</h2>
+                <h3>25 s</h3>
+                <button id="donebtn">DONE</button>
+            </div>
+            <div class="exercise bicycleCrunches">
+                <img src="img/bicycleCrunches.gif" alt="">
+                <h2>3/12 || BICYCLE CRUNCHES</h2>
+                <h3>25 s</h3>
+                <button id="donebtn">DONE</button>
+            </div>
+            <div class="exercise longArmCrunches">
+                <img src="img/longArmCrunches.gif" alt="">
+                <h2>4/12 || LONG ARM CRUNCHES</h2>
+                <h3>10</h3>
+                <button id="donebtn">DONE</button>
+            </div>
+            <div class="exercise crunches">
+                <img src="img/crunches.gif" alt="">
+                <h2>5/12 || CRUNCHES</h2>
+                <h3>10</h3>
+                <button id="donebtn">DONE</button>
+            </div>
+            <div class="exercise russianTwist">
+                <img src="img/russianTwist.gif" alt="">
+                <h2>6/12 || RUSSIAN TWISTS</h2>
+                <h3>16 (8 each side)</h3>
+                <button id="donebtn">DONE</button>
+            </div>
+            <div class="exercise bicycleCrunches">
+                <img src="img/bicycleCrunches.gif" alt="">
+                <h2>7/12 || BICYCLE CRUNCHES</h2>
+                <h3>25 s</h3>
+                <button id="donebtn">DONE</button>
+            </div>
+            <div class="exercise longArmCrunches">
+                <img src="img/longArmCrunches.gif" alt="">
+                <h2>8/12 || LONG ARM CRUNCHES</h2>
+                <h3>10</h3>
+                <button id="donebtn">DONE</button>
+            </div>
+            <div class="exercise crunches">
+                <img src="img/crunches.gif" alt="">
+                <h2>9/12 || CRUNCHES</h2>
+                <h3>10</h3>
+                <button id="donebtn">DONE</button>
+            </div>
+            <div class="exercise russianTwist">
+                <img src="img/russianTwist.gif" alt="">
+                <h2>10/12 || RUSSIAN TWISTS</h2>
+                <h3>16 (8 each side)</h3>
+                <button id="donebtn">DONE</button>
+            </div>
+            <div class="exercise cobraStretch">
+                <img src="img/cobraStretch.gif" alt="">
+                <h2>11/12 || COBRA STRETCH</h2>
+                <h3>30 s</h3>
+                <button id="donebtn">DONE</button>
+            </div>
+            <div class="exercise lyingTwist">
+                <img src="img/lyingTwist.gif" alt="">
+                <h2>12/12 || LYING TWIST</h2>
+                <h3>30 s (Both Sides)</h3>
+                <button id="donebtn">DONE</button>
+            </div>
         </div>
     </div>
 
@@ -165,8 +189,11 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script>
+        
+    </script>
 
 
 </body>
+
 </html>
